@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Care Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🪴Plant Care Calculator🪴</h1>
+
+    <div class="water-section">
+        <h2>💦 Water Calculation 💦</h2>
+        <form id="watering-form">
+            <div class="inputs-container">
+                <label for="current-water">Current Water %:</label>
+                <input type="number" id="current-water" name="current-water" min="0" max="100" required>
+                <button type="submit" class="glow-on-hover">Calculate Water</button>
+            </div>
+        </form>
+        <div id="water-result" class="result" style="display: none;"></div>
+        <div id="water-images" class="images"></div>
+    </div>
+    <hr />
+    <div class="soil-section">
+        <h2>🌱 Soil Calculation 🌱</h2>
+        <form id="soil-form">
+            <div class="inputs-container">
+                <label for="current-soil">Current Soil %:</label>
+                <input type="number" id="current-soil" name="current-soil" min="0" max="100" required>
+                <button type="submit" class="glow-on-hover">Calculate Soil</button>
+            </div>
+        </form>
+        <div id="soil-result" class="result" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
